@@ -4,6 +4,11 @@ package week3.bruteForceMotifFinding;
  * Created by chewy on 1/25/17.
  */
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /*****
       MotifEnumeration(Dna, k, d)
         Patterns ← an empty set
@@ -17,7 +22,21 @@ package week3.bruteForceMotifFinding;
 
 
 public class MotifFinding {
-    public void MofitEnumeration() {
+    private String dna;
+    private int k;
+    private int d;
 
+    public MotifFinding(String dna, int k, int d) {
+        this.dna = dna;
+        this.k = k;
+        this.d = d;
+    }
+
+    public void MofitEnumeration() {
+        Set<String> pattern = new HashSet<>();
+        int len = dna.length();
+        for (int i =0;i<len;++i) {
+
+        }
     }
 }
